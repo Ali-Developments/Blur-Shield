@@ -1,0 +1,49 @@
+# Replit configuration for Blur-Shield monorepo
+# Starts: API backend (port 3000) + Expo web/metro dev (port 8084)
+# Also supports "Run" single-file UX via entrypoint script.
+
+version = 1
+
+entrypoint = "replit-entry.sh"
+
+# Primary exposed port: frontend web build
+[ports]
+index = 8084
+
+[[ports]]
+localPort = 3000
+externalPort = 3000
+name = "api-server"
+
+[[ports]]
+localPort = 8084
+externalPort = 8084
+name = "expo-frontend"
+
+[nix]
+channel = "stable-24.05"
+
+[env]
+PORT = "3000"
+NODE_ENV = "production"
+TMPDIR = "/tmp"
+# pnpm
+npm_config_node_linker = "hoisted"
+PNPM_HOME = "$HOME/.local/share/pnpm"
+
+[deployment]
+# Target is always a long-running web service
+run = ["bash", "replit-entry.sh"]
+deploymentTarget = "web-service"
+build = ["bash", "-lc", "set -e; if command -v corepack >/dev/null 2>&1; then corepack enable; fi; if ! command -v pnpm >/dev/null 2>&1; then npm i -g pnpm@11; fi; pnpm install --no-frozen-lockfile --prefer-offline || pnpm install --no-frozen-lockfile"]
+
+[languages]
+
+[languages.javascript]
+pattern = "**/*.{js,jsx,ts,tsx,mjs,cjs}"
+
+[packager]
+language = "node"
+
+[packager.features]
+packageSearch = true

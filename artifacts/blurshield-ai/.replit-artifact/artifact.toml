@@ -1,0 +1,23 @@
+kind = "mobile"
+previewPath = "/"
+title = "BlurShield AI"
+version = "1.0.0"
+id = "artifacts/blurshield-ai"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/" ]
+localPort = 24746
+
+[services.development]
+run = "pnpm --filter @workspace/blurshield-ai run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/blurshield-ai", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/blurshield-ai", "run", "serve" ]
+
+[services.env]
+PORT = "24746"
+BASE_PATH = "/"

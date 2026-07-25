@@ -1,0 +1,254 @@
+Build a complete mobile application called "BlurShield AI".
+
+The app is an AI-powered content filtering application inspired by HaramBlur.
+
+IMPORTANT:
+Do not create only UI mockups or simple ON/OFF toggles.
+Create a fully connected application structure with working navigation.
+
+================================================
+
+MAIN IDEA
+
+Users should browse social media INSIDE the application itself.
+
+Flow:
+
+1. User opens BlurShield AI.
+2. User selects TikTok, Instagram, YouTube, Facebook or X.
+3. User signs into their account INSIDE BlurShield AI.
+4. The social media content opens inside the app.
+5. The AI blur system works while browsing.
+
+================================================
+
+SOCIAL MEDIA PAGES
+
+Supported Platforms:
+
+- TikTok
+- Instagram
+- YouTube
+- Facebook
+- X (Twitter)
+- Web Browser
+
+Each platform should have:
+
+✓ Connect Account page
+✓ Login status
+✓ Disconnect account button
+✓ Protection status indicator
+✓ In-app browsing experience
+
+Do NOT create only ON/OFF switches.
+
+Instead:
+
+When user presses TikTok:
+
+→ Open TikTok page
+→ Ask user to login
+→ Save login session
+→ Open browsing interface
+
+Show:
+
+🟢 Protection Active
+🔴 Protection Disabled
+
+================================================
+
+AI BLUR SYSTEM
+
+Create architecture for:
+
+- Blur females only
+- Blur males only
+- Blur everyone
+- Blur faces only
+- Blur full body
+
+Blur intensity:
+
+- Light
+- Medium
+- Strong
+
+Include beautiful animations and settings pages.
+
+================================================
+
+KIDS MODE
+
+Create:
+
+✓ Child friendly interface
+✓ Parent controls
+✓ Safe browsing mode
+✓ Large buttons
+✓ Illustrations
+
+================================================
+
+COIN SYSTEM
+
+Modify the coin system:
+
+✓ Give users ONLY 350 coins once when creating account.
+
+Remove daily free coins completely.
+
+Users can earn additional coins ONLY by rewarded advertisements.
+
+Reward system:
+
+Watch 1 ad → +25 coins
+Watch 3 ads → +80 coins
+Watch 5 ads → +150 coins
+
+Maximum ads per day:
+
+10 ads.
+
+Create:
+
+✓ Coin wallet
+✓ Coin history
+✓ Reward animations
+✓ Daily ad progress indicator
+
+Prevent reward abuse and duplicate rewards.
+
+================================================
+
+STATISTICS
+
+Create:
+
+✓ Total filtered content
+✓ Protection hours
+✓ Coins earned
+✓ Daily streak
+✓ Weekly charts
+✓ Monthly charts
+
+================================================
+
+AUTHENTICATION
+
+Implement:
+
+✓ Login
+✓ Register
+✓ Google Sign In
+✓ Apple Sign In
+✓ Forgot Password
+✓ Persistent sessions
+✓ User Profile
+
+================================================
+
+LANGUAGES
+
+Support ONLY:
+
+✓ Arabic (full RTL support)
+✓ English
+
+Allow language switching inside settings.
+
+================================================
+
+DESIGN STYLE
+
+Create a premium multi-million-dollar startup design.
+
+Style:
+
+✓ Apple inspired
+✓ Luxury fintech style
+✓ Premium AI startup appearance
+✓ Glassmorphism
+✓ Floating cards
+✓ Premium gradients
+✓ Soft glows
+✓ Heavy animations
+✓ Smooth micro interactions
+✓ Lottie animations
+✓ Beautiful illustrations
+
+Support:
+
+✓ Dark Mode
+✓ Light Mode
+
+Colors:
+
+Primary:
+#2563EB
+
+Secondary:
+#7C3AED
+
+Accent:
+#06B6D4
+
+================================================
+
+REQUIRED PAGES
+
+1. Splash Screen
+2. Language Selection
+3. Onboarding
+4. Login
+5. Register
+6. Forgot Password
+7. Home Dashboard
+8. Social Platforms Page
+9. TikTok Page
+10. Instagram Page
+11. YouTube Page
+12. Facebook Page
+13. X Page
+14. Blur Settings
+15. Kids Mode
+16. Coin Wallet
+17. Rewards
+18. Statistics
+19. Notifications
+20. Referral
+21. Profile
+22. Settings
+23. Privacy Policy
+24. Help & Support
+
+================================================
+
+HOME PAGE
+
+Include:
+
+✓ Large Protection Button
+✓ Coin Balance Card
+✓ Daily Ad Progress
+✓ Statistics Cards
+✓ Recent Activity
+✓ Quick Actions
+✓ AI Illustration
+✓ Animated Background
+
+================================================
+
+IMPORTANT
+
+Prioritize:
+
+1. Fully working navigation.
+2. Complete page connections.
+3. In-app social media browsing.
+4. Login inside the app.
+5. Beautiful premium UI.
+6. Stability and completeness.
+
+Do NOT generate placeholders or incomplete pages.

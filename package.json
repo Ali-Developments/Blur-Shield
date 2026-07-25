@@ -1,0 +1,16 @@
+{
+  "name": "blurshield-monorepo",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.15.0",
+  "workspaces": [
+    "artifacts/*",
+    "lib/*"
+  ],
+  "scripts": {
+    "typecheck:libs": "pnpm --filter @workspace/api-client-react exec tsc -p tsconfig.json --noEmit && pnpm --filter @workspace/api-zod exec tsc -p tsconfig.json --noEmit && pnpm --filter @workspace/db exec tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}

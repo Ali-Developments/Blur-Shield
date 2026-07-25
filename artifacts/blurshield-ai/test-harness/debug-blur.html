@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>Blur Debug Page</title></head>
+  <body>
+    <h1>Blur Debug Page</h1>
+    <video id="demoVideo" controls preload="auto" style="width:320px;height:240px;display:block;" muted>
+      <source src="debug-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div id="status"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const video = document.getElementById('demoVideo');
+        if (!video) {
+          document.getElementById('status').textContent = 'video missing';
+          return;
+        }
+        video.addEventListener('loadeddata', function() {
+          document.getElementById('status').textContent = 'loadeddata readyState=' + this.readyState + ' videoWidth=' + this.videoWidth + ' videoHeight=' + this.videoHeight;
+        });
+        video.addEventListener('error', function(e) {
+          document.getElementById('status').textContent = 'video error code=' + this.error?.code + ' message=' + this.error?.message;
+        });
+      });
+    </script>
+  </body>
+</html>

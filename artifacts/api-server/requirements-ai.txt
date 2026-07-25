@@ -1,0 +1,11 @@
+# Offline worker runtime. Install into the workspace .venv:
+#   .\.venv\Scripts\python.exe -m pip install -r artifacts\api-server\requirements-ai.txt
+opencv-python-headless==4.12.0.88
+audio-separator==0.44.3
+onnxruntime==1.27.0
+onnx==1.22.0
+protobuf==4.25.3
+soundfile==0.14.0
+six==1.17.0
+typing_extensions==4.16.0
+numpy<2.5,>=1.22

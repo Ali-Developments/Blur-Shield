@@ -1,0 +1,34 @@
+# Node
+node_modules/
+
+# Python
+.venv/
+.venv310/
+__pycache__/
+*.pyc
+
+# Env
+.env
+.env.*
+
+# Expo
+.expo/
+.expo-shared/
+
+# Build
+dist/
+build/
+
+# Temp
+.tmp-playwright/
+*.log
+
+# AI Models
+*.onnx
+*.pt
+*.pth
+
+# Media
+*.mp3
+*.wav
+*.zip
