@@ -23,11 +23,6 @@ build/
 .tmp-playwright/
 *.log
 
-# AI Models
-*.onnx
-*.pt
-*.pth
-
 # Media
 *.mp3
 *.wav
